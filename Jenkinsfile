@@ -10,7 +10,6 @@ pipeline {
     }
 
     stages {
-
         stage('Run Tests') {
             parallel {
 
@@ -37,9 +36,8 @@ pipeline {
                 expression { env.GIT_BRANCH == 'origin/main' }
             }
             steps {
-                echo 'Deploying...'
+                echo 'Step not executed...'
             }
         }
-
     }
 }
